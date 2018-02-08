@@ -4,7 +4,7 @@
             <el-menu
             default-active="1"
             class="el-menu-vertical-demo"
-            @open="handleOpen">
+            @select="handleSelect">
             <el-menu-item index="1">
                 <span slot="title">导航二</span>
             </el-menu-item>
