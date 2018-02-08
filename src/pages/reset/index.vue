@@ -12,9 +12,11 @@
       data() {
         return {
           items: [
-            "1.由于reset整个浏览器样式太过于暴力，选择使用normalize.css来初始化浏览器样式",
-            "2.给html，body的宽高设置100%",
-            "3.设置基本font-size，一般为14px"
+            "- CSS Reset把浏览器的默认样式都重置了",
+            "- normalize.css是保留浏览器的原来样式并且做到每个浏览器显示一致。",
+            "- 选择使用normalize.css",
+            "- 给html，body的宽高设置100%",
+            "- 设置基本font-size，一般为14px"
           ]
         };
       }
