@@ -2,7 +2,7 @@
     <el-container class="home">
         <el-aside width="200px">
             <el-menu
-            default-active="reset"
+            :default-active="active"
             class="el-menu-vertical-demo"
             @select="handleSelect">
             <el-menu-item index="reset">
@@ -20,6 +20,14 @@
 </template>
 <script>
     export default {
+      data() {
+        return {
+          active: "reset"
+        };
+      },
+      mounted() {
+        this.active = this.$route.name.toLowerCase();
+      },
       methods: {
         handleSelect(key, keyPath) {
           console.log(key, keyPath);
