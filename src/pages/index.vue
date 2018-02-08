@@ -5,8 +5,8 @@
             default-active="1"
             class="el-menu-vertical-demo"
             @select="handleSelect">
-            <el-menu-item index="1">
-                <span slot="title">导航二</span>
+            <el-menu-item index="reset">
+                <span slot="title">初始化浏览器样式</span>
             </el-menu-item>
             </el-menu>
         </el-aside>
@@ -20,6 +20,7 @@
       methods: {
         handleSelect(key, keyPath) {
           console.log(key, keyPath);
+          this.$router.push({ path: `/${key}` });
         }
       }
     };
