@@ -2,11 +2,14 @@
     <el-container class="home">
         <el-aside width="200px">
             <el-menu
-            default-active="1"
+            default-active="reset"
             class="el-menu-vertical-demo"
             @select="handleSelect">
             <el-menu-item index="reset">
                 <span slot="title">初始化浏览器样式</span>
+            </el-menu-item>
+            <el-menu-item index="center">
+                <span slot="title">水平垂直居中</span>
             </el-menu-item>
             </el-menu>
         </el-aside>
