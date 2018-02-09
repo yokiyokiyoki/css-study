@@ -31,4 +31,11 @@
       }
     };
 </script>
+<style lang="less" scoped>
+    .center {
+      text-align: left;
+    }
+
+</style>
+
 
