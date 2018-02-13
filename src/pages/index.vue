@@ -19,29 +19,28 @@
     </el-container>
 </template>
 <script>
-    export default {
-      data() {
-        return {
-          active: "reset"
-        };
-      },
-      mounted() {
-        this.active = this.$route.name.toLowerCase();
-      },
-      methods: {
-        handleSelect(key, keyPath) {
-          console.log(key, keyPath);
-          this.$router.push({ path: `/${key}` });
-        }
-      }
-    };
-</script>
-<style lang="less" scoped>
-    .home {
-      height: 100%;
-      .el-menu {
-        height: 100%;
+  export default {
+    data() {
+      return {
+        active: "reset"
+      };
+    },
+    mounted() {
+      this.active = this.$route.name.toLowerCase();
+    },
+    methods: {
+      handleSelect(key, keyPath) {
+        console.log(key, keyPath);
+        this.$router.push({ path: `/${key}` });
       }
     }
-
+  };
+</script>
+<style lang="less" scoped>
+  .home {
+    height: 100%;
+    .el-menu {
+      height: 100%;
+    }
+  }
 </style>
