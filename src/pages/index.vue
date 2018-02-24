@@ -11,6 +11,9 @@
             <el-menu-item index="center">
                 <span slot="title">水平垂直居中</span>
             </el-menu-item>
+            <el-menu-item index="clear">
+                <span slot="title">清除浮动</span>
+            </el-menu-item>
             </el-menu>
         </el-aside>
         <el-main>

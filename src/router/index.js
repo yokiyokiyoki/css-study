@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from '@/pages';
 import Reset from '@/pages/reset';
 import Center from '@/pages/center';
+import Clear from '@/pages/clear'
 
 Vue.use(Router)
 
@@ -22,6 +23,10 @@ export default new Router({
           path: '/center',
           name: 'Center',
           component: Center
+        },{
+          path:'/clear',
+          name:'Clear',
+          component:Clear
         }
       ]
     }
