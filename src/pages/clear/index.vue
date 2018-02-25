@@ -137,7 +137,7 @@
             <div slot='header'>
                 <div class="title">- 不难发现，闭合浮动都是基于两种方法</div>
                 <div class="title">- 通过伪元素：在浮动元素的末尾添加一个空元素，设置属性clear:both;</div>
-                <div class="title">- 设置父元素overflow，display:table触发BFC/flow root,IE6-7则是zoom:1触发hasLayout</div>
+                <div class="title">- 设置父元素overflow，display:table等触发BFC/flow root,IE6-7则是zoom:1触发hasLayout</div>
             </div>   
         </el-card>  
     </div>
