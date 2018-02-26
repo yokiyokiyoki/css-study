@@ -14,6 +14,9 @@
             <el-menu-item index="clear">
                 <span slot="title">清除浮动</span>
             </el-menu-item>
+            <el-menu-item index="measure">
+                <span slot="title">css单位</span>
+            </el-menu-item>
             </el-menu>
         </el-aside>
         <el-main>
