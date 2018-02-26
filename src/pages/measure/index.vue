@@ -10,13 +10,13 @@
                 <div class="title">- 而如果父级元素不是em，就照父级元素的px来</div>
             </div>
             <div class="item">
-                <div class="wrap-em" style="font-size:14px;">
+                <div class="wrap-em" style="font-size:14px;border:1px solid green;margin-bottom:30px;">
                     <div style="font-size:1.2em">
                         test1(14*1.2px)
                         <div style="font-size:1.2em">test2(14*1.2*1.2px)</div>
                     </div>
                 </div>
-                <div class="wrap-em" style="font-size:14px;">
+                <div class="wrap-em" style="font-size:14px;border:1px solid black;">
                     <div>
                         test1（14px）
                         <div style="font-size:1.2em">test2(14*1.2px)</div>
@@ -31,3 +31,12 @@ export default {
   
 }
 </script>
+<style lang="less" scoped>
+.box-card{
+    .title{
+        text-align:left;
+        padding: 10px;
+    }
+}
+</style>
+
