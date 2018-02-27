@@ -17,6 +17,9 @@
             <el-menu-item index="measure">
                 <span slot="title">css单位</span>
             </el-menu-item>
+            <el-menu-item index="importFont">
+                <span slot="title">引入字体图标</span>
+            </el-menu-item>
             </el-menu>
         </el-aside>
         <el-main>
