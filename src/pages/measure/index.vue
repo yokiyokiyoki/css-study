@@ -33,6 +33,44 @@
                 <div class="title">- 如果html的font-size为14px，那么整个页面的rem都是乘以这个基准值</div>
             </div>  
         </el-card> 
+        <el-card class="box-card">
+            <div slot='header'>
+                <div class="title">- 百分比，是相对于父级元素而言的</div>
+                <div class="title">- 响应式设计的一种解决方案</div>
+            </div>
+            <div class="item">
+                <div class="wrap-percent">
+                    <div style="width:100px;height:100px;">
+                        <div style="width:80%;height:80%;"></div>
+                    </div>
+                </div>
+            </div>  
+        </el-card> 
+        <el-card class="box-card">
+            <div slot='header'>
+                <div class="title">- vh和vw</div>
+                <div class="title">- 由于百分比是针对父元素的，如果想专门针对视口（viewpoint）,就要用vh和vw</div>
+                <div class="title">- 1vh=1/100 的视口高度，如果屏幕高度为900px,1vh就是9px</div>
+                <div class="title">- 用一行代码就可以实现和屏幕等高的侧边栏，100vh</div>
+            </div>  
+        </el-card>
+        <el-card class="box-card">
+            <div slot='header'>
+                <div class="title">- vmin和vmax</div>
+                <div class="title">- 是vh和vw之间的最小值和最大值</div>
+                <div class="title">- 例如视口高度为700px,宽度为1100px。vmin就是7px，vmax是11px</div>
+                <div class="title">- 如果有个元素始终要在屏幕上可见，只要对他宽度和高度赋予小于100vmin的值</div>
+                <div class="title">- 如果要一个元素铺满整个视口，那么赋予它宽度和高度100vmax，虽然说宽度超出视口宽度</div>
+            </div>  
+        </el-card> 
+        <el-card class="box-card">
+            <div slot='header'>
+                <div class="title">- ex和ch</div>
+                <div class="title">- 与rem和em一样，依赖于当前的字体大小</div>
+                <div class="title">- ch 单位通常被定义为数字0的宽度,主要用于盲文排版</div>
+                <div class="title">- ex被定义为当前字体的小写字母x的高度或者1/2的1em，可以看看font的x-height</div>
+            </div>  
+        </el-card> 
   </div>
 </template>
 <script>
@@ -53,6 +91,11 @@ export default {
                 border:1px solid green;
             }
             &:nth-child(2){
+                border:1px solid black;
+            }
+        }
+        .wrap-percent{
+            div{
                 border:1px solid black;
             }
         }
