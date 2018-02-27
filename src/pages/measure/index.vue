@@ -69,7 +69,14 @@
                 <div class="title">- 与rem和em一样，依赖于当前的字体大小</div>
                 <div class="title">- ch 单位通常被定义为数字0的宽度,主要用于盲文排版</div>
                 <div class="title">- ex被定义为当前字体的小写字母x的高度或者1/2的1em，可以看看font的x-height</div>
+                <div class="title">- ex可以微调版式，比如上标文本和下标文本等</div>
             </div>  
+            <div class="item">
+                <div class="wrap-ex">
+                    <p>这段标签包含<sup>上标文本</sup></p>
+                    <p>这段标签包含<sub>下标文本</sub></p>
+                </div>
+            </div>
         </el-card> 
   </div>
 </template>
@@ -80,6 +87,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .box-card{
+    margin-bottom: 20px;
     .title{
         text-align:left;
         padding: 10px;
@@ -97,6 +105,16 @@ export default {
         .wrap-percent{
             div{
                 border:1px solid black;
+            }
+        }
+        .wrap-ex{
+            sup {
+                position: relative;
+                bottom: 1ex;
+            }
+            sub {
+                position: relative;
+                bottom: -1ex;
             }
         }
     }
