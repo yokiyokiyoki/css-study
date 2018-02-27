@@ -31,6 +31,7 @@
                 <div class="title">- 同样是基于font-size</div>
                 <div class="title">- 这就是为了解决上面嵌套的问题，我们需要统一的度量标准来进行缩放</div>
                 <div class="title">- 如果html的font-size为14px，那么整个页面的rem都是乘以这个基准值</div>
+                <div class="title">- IE8以下（包含IE8）不支持,其他主流浏览器都支持ff chrome safari Opera;移动端的话，IOS Safari, Android 也都支持</div>
             </div>  
         </el-card> 
         <el-card class="box-card">
@@ -52,6 +53,7 @@
                 <div class="title">- 由于百分比是针对父元素的，如果想专门针对视口（viewpoint）,就要用vh和vw</div>
                 <div class="title">- 1vh=1/100 的视口高度，如果屏幕高度为900px,1vh就是9px</div>
                 <div class="title">- 用一行代码就可以实现和屏幕等高的侧边栏，100vh</div>
+                <div class="title">- IE8以下（包含IE8）不支持</div>
             </div>  
         </el-card>
         <el-card class="box-card">
@@ -61,6 +63,9 @@
                 <div class="title">- 例如视口高度为700px,宽度为1100px。vmin就是7px，vmax是11px</div>
                 <div class="title">- 如果有个元素始终要在屏幕上可见，只要对他宽度和高度赋予小于100vmin的值</div>
                 <div class="title">- 如果要一个元素铺满整个视口，那么赋予它宽度和高度100vmax，虽然说宽度超出视口宽度</div>
+                <div class="title">- IE8以下（包含IE8）不支持</div>
+                <div class="title">- 在IE9中使用vm来代替vmin</div>
+                <div class="title">- IE10, IE11不支持vmax</div>
             </div>  
         </el-card> 
         <el-card class="box-card">
@@ -70,6 +75,8 @@
                 <div class="title">- ch 单位通常被定义为数字0的宽度,主要用于盲文排版</div>
                 <div class="title">- ex被定义为当前字体的小写字母x的高度或者1/2的1em，可以看看font的x-height</div>
                 <div class="title">- ex可以微调版式，比如上标文本和下标文本等</div>
+                <div class="title">- PC浏览器都支持ex</div>
+                <div class="title">- ie8 及以下不支持ch</div>
             </div>  
             <div class="item">
                 <div class="wrap-ex">
