@@ -5,6 +5,7 @@ import Reset from "@/pages/reset";
 import Center from "@/pages/center";
 import Clear from "@/pages/clear";
 import Measure from "@/pages/measure";
+import ImportFont from "@/pages/importFont";
 
 Vue.use(Router);
 
@@ -35,7 +36,11 @@ export default new Router({
           name: "Measure",
           component: Measure
         },
-        {}
+        {
+          path: "importFont",
+          name: "ImportFont",
+          component: ImportFont
+        }
       ]
     }
   ]
