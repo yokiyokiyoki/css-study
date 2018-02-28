@@ -1,5 +1,5 @@
 <template>
-  <div class="clear">
+    <div class="clear">
       <el-card class="box-card">
             <div slot="header" class="clearfix">
                 <div class="title">- 清除浮动不如叫闭合浮动更为之准确</div>
@@ -144,78 +144,76 @@
 </template>
 <script>
 export default {
-  data(){
-      return{
-        
-      }
+  data() {
+    return {};
   }
-}
+};
 </script>
 
 <style lang="less" scoped>
-    .clear{
-      text-align: left;
-      .item {
-        padding: 18px 0;
-      }
+.clear {
+  text-align: left;
+  .item {
+    padding: 18px 0;
+  }
 
-      .box-card {
-        width: 100%;
-        margin: 10px 0px;
-        .wrap{
-            border: 1px solid blue;
-            padding: 10px;
-            .main{
-                border:1px solid red;
-                padding: 10px;
-            }
-            .side{
-                padding: 10px;
-                border: 1px solid green;
-            }
-        }
-        .footer{
-            padding: 10px;
-            border: 1px solid black;
-        }
-        .left{
-            float: left;
-        }
-        .right{
-            float: right;
-        }
-        .clear{
-            clear: both;
-        }
-        .clearfix{
-            zoom: 1;
-            &::after{
-                clear: both;
-                content: ".";
-                display: block;
-                height: 0;
-                visibility: hidden;
-            }
-        }
-        .cf{
-            zoom: 1;
-            &::before,&::after{
-                display: table;
-                content: '';
-            }
-            &::after{
-                clear: both;
-            }
-        }
-        .title {
-            padding: 14px 0;
-        }
-        .wrap-one{
-            .box{
-                margin-bottom: 30px;
-            }
-        }
+  .box-card {
+    width: 100%;
+    margin: 10px 0px;
+    .wrap {
+      border: 1px solid blue;
+      padding: 10px;
+      .main {
+        border: 1px solid red;
+        padding: 10px;
+      }
+      .side {
+        padding: 10px;
+        border: 1px solid green;
       }
     }
-
+    .footer {
+      padding: 10px;
+      border: 1px solid black;
+    }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+    .clear {
+      clear: both;
+    }
+    .clearfix {
+      zoom: 1;
+      &::after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+      }
+    }
+    .cf {
+      zoom: 1;
+      &::before,
+      &::after {
+        display: table;
+        content: "";
+      }
+      &::after {
+        clear: both;
+      }
+    }
+    .title {
+      padding: 14px 0;
+    }
+    .wrap-one {
+      .box {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
 </style>

@@ -6,6 +6,7 @@ import Center from "@/pages/center";
 import Clear from "@/pages/clear";
 import Measure from "@/pages/measure";
 import ImportFont from "@/pages/importFont";
+import LessFun from "@/pages/lessFun";
 
 Vue.use(Router);
 
@@ -40,6 +41,11 @@ export default new Router({
           path: "importFont",
           name: "ImportFont",
           component: ImportFont
+        },
+        {
+          path: "lessFun",
+          name: "LessFun",
+          component: LessFun
         }
       ]
     }

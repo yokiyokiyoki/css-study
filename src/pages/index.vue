@@ -20,6 +20,9 @@
             <el-menu-item index="importFont">
                 <span slot="title">引入字体图标</span>
             </el-menu-item>
+            <el-menu-item index="lessFun">
+                <span slot="title">简单点，less</span>
+            </el-menu-item>
             </el-menu>
         </el-aside>
         <el-main>
@@ -28,28 +31,28 @@
     </el-container>
 </template>
 <script>
-  export default {
-    data() {
-      return {
-        active: "reset"
-      };
-    },
-    mounted() {
-      this.active = this.$route.name.toLowerCase();
-    },
-    methods: {
-      handleSelect(key, keyPath) {
-        console.log(key, keyPath);
-        this.$router.push({ path: `/${key}` });
-      }
-    }
-  };
-</script>
-<style lang="less" scoped>
-  .home {
-    height: 100%;
-    .el-menu {
-      height: 100%;
+export default {
+  data() {
+    return {
+      active: "reset"
+    };
+  },
+  mounted() {
+    this.active = this.$route.name.toLowerCase();
+  },
+  methods: {
+    handleSelect(key, keyPath) {
+      console.log(key, keyPath);
+      this.$router.push({ path: `/${key}` });
     }
   }
+};
+</script>
+<style lang="less" scoped>
+.home {
+  height: 100%;
+  .el-menu {
+    height: 100%;
+  }
+}
 </style>
