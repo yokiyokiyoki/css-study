@@ -155,6 +155,59 @@ div{
             </div>    
         </div>  
     </el-card> 
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- 运算</div>
+            <div class="title">- 可以对变量进行加减乘除等运算</div>
+        </div>   
+    </el-card> 
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- ecaping</div>
+            <div class="title">- 可以用任意变量插值进去，用~连接</div>
+        </div> 
+        <div class="item">
+            <div class="wrap-less">
+                <pre>
+@min768: ~"(min-width: 768px)";
+.element {
+  @media @min768 {
+    font-size: 1.2rem;
+  }
+}                   
+                </pre>
+            </div>
+            <div class="wrap-css">
+                <pre>
+@media (min-width: 768px) {
+  .element {
+    font-size: 1.2rem;
+  }
+}                   
+                </pre>
+            </div>
+        </div>  
+    </el-card>
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- 函数</div>
+            <div class="title">- Less 内置了多种函数用于转换颜色、处理字符串、算术运算等。</div>
+        </div>   
+    </el-card>
+     <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- 命名空间</div>
+            <div class="title">- 通过（）来定义命名空间</div>
+        </div>   
+    </el-card> 
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- @import引入其他less文件</div>
+            <div class="title">- 如果是引入less后缀，可以省略，例如@import “libray”,css后缀就正常@import "libray.css"</div>
+            <div class="title">- 然后可以正常使用这个less里面的变量，参考js引入</div>
+            <div class="title">- 像css里面的import，http会发起新的请求，less则会编译成同一个文件</div>
+        </div>   
+    </el-card>   
   </div>
 </template>
 <script>
