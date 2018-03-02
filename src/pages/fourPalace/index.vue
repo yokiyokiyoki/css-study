@@ -8,12 +8,14 @@
             <div class="title">- 上下两个框被一个wrap包着，wrap使用flex-direction:column，就成了纵向布局</div>
         </div>
         <div class="item">
-            <div class="wrap-box">
+            <div class="wrap-box wrap-one">
                 <div class="flex-box flex-one">
-                    1
+                    <div class="flex-box flex-one">1</div>
+                    <div class="flex-box flex-one">2</div>
                 </div>
                 <div class="flex-box flex-one">
-                    2
+                    <div class="flex-box flex-one">3</div>
+                    <div class="flex-box flex-one">4</div>
                 </div>
             </div>
         </div>  
@@ -26,13 +28,18 @@ export default {};
 <style lang="less" scoped>
 .wrap-box {
   display: flex;
-  direction: column;
+  flex-direction: column;
 }
 .flex-box {
   display: flex;
 }
 .flex-one {
   flex: 1;
+}
+.item {
+  .wrap-one {
+    height: 200px;
+  }
 }
 .box-card {
   width: 100%;
