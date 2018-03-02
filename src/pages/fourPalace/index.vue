@@ -6,7 +6,7 @@
             <div class="title">- flex布局，等比例</div>
             <div class="title">- 思路是先上下两个框分别包着两个框</div>
             <div class="title">- 上下两个框被一个wrap包着，wrap使用flex-direction:column，就成了纵向布局</div>
-            <div class="title">- 然后如果中间有间隔，就需要小框挨着的小框，使用margin，一样也是等比例的，四个框</div>
+            <div class="title">- 然后如果中间有间隔（十字型空隙），就需要小框挨着的小框，使用margin，一样也是等比例的，四个框</div>
             <div class="title">- 上下两层也要使用margin</div>
         </div>
         <div class="item">
