@@ -7,6 +7,7 @@ import Clear from "@/pages/clear";
 import Measure from "@/pages/measure";
 import ImportFont from "@/pages/importFont";
 import LessFun from "@/pages/lessFun";
+import FourPalace from "@/pages/fourPalace";
 
 Vue.use(Router);
 
@@ -46,6 +47,11 @@ export default new Router({
           path: "lessFun",
           name: "LessFun",
           component: LessFun
+        },
+        {
+          path: "fourPalace",
+          name: "FourPalace",
+          component: FourPalace
         }
       ]
     }

@@ -23,6 +23,9 @@
             <el-menu-item index="lessFun">
                 <span slot="title">简单点，less</span>
             </el-menu-item>
+            <el-menu-item index="lfourPalace">
+                <span slot="title">四宫格布局</span>
+            </el-menu-item>
             </el-menu>
         </el-aside>
         <el-main>
