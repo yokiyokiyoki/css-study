@@ -26,6 +26,12 @@
             <el-menu-item index="fourPalace">
                 <span slot="title">四宫格布局</span>
             </el-menu-item>
+            <el-menu-item index="fixWidth">
+                <span slot="title">定宽布局</span>
+            </el-menu-item>
+            <el-menu-item index="average">
+                <span slot="title">均等分配布局</span>
+            </el-menu-item>
             </el-menu>
         </el-aside>
         <el-main>
