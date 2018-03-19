@@ -17,6 +17,23 @@
                 </div>
             </div>  
         </el-card>
+        <el-card class="box-card">
+            <div slot='header'>
+                <div class="title">- 使用flex布局</div>
+            </div>
+            <div class="item">
+                <div class="wrap-flex">
+                    <div class="top border-box ">头部</div>
+                    <div class="middle">
+                        <div class="left border-box ">主左边</div>
+                        <div class="right border-box ">
+                            <div class="right-helper">主右假装很长</div>
+                        </div>
+                    </div>
+                    <div class="bottom border-box ">底部</div>
+                </div>
+            </div>  
+        </el-card>
   </div>
 </template>
 <script>
@@ -69,9 +86,36 @@ export default {};
       bottom: 100px;
       left: 100px;
       overflow: auto;
-      .right-helper {
+      &-helper {
         height: 1200px;
         width: 100%;
+      }
+    }
+  }
+  &-flex {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .top {
+      height: 100px;
+    }
+    .bottom {
+      height: 100px;
+    }
+    .middle {
+      flex: 1;
+      display: flex;
+      .left {
+        width: 100px;
+      }
+      .right {
+        flex: 1;
+        overflow: auto;
+        &-helper {
+          height: 1200px;
+          width: 100%;
+        }
       }
     }
   }
