@@ -39,6 +39,20 @@
                 </div>
             </div>  
         </el-card>
+        <el-card class="box-card">
+            <div slot='header'>
+                <div class="title">- 均等分配，多余的可以自己进行换行</div>
+                <div class="title">- 使用flex布局，由于其默认不换行，通过flex-wrap:wrap</div>
+                <div class="title">- 父容器拥有指定宽度,其中的子元素也拥有指定的宽度（不必设置flex：1）</div>
+            </div>
+            <div class="item">
+                <div class="wrap-flex-wrap">
+                    <div class="col border-box" v-for='n in 8' :key='n'>
+                        <p>{{n}}</p>
+                    </div>
+                </div>
+            </div>  
+        </el-card>
   </div>
 </template>
 <script>
@@ -79,6 +93,15 @@ export default {};
     p {
       background-color: red;
     }
+  }
+}
+.wrap-flex-wrap {
+  display: flex;
+  height: 100px;
+  width: 430px;
+  flex-wrap: wrap;
+  .col {
+    width: 100px;
   }
 }
 </style>
