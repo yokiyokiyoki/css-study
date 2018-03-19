@@ -34,6 +34,32 @@
                 </div>
             </div>  
         </el-card>
+        <el-card class="box-card">
+            <div slot='header'>
+                <div class="title">- 百分比定宽+自适应</div>
+                <div class="title">- 如果不想底部和头部都固定大小，可以把px改成百分比</div>
+                <div class="title">- 这样就可以相对于body的宽高变化了</div>
+            </div> 
+        </el-card>
+        <el-card class="box-card">
+            <div slot='header'>
+                <div class="title">- 如果想头部和底部根据自身的内容来实现自适应，可以使用flex布局</div>
+                <div class="title">- 把上面定宽flex实现的去掉宽高就好</div>
+                <div class="title">- 可以加点内边距好看点</div>
+            </div>
+            <div class="item">
+                <div class="wrap-flex-auto">
+                    <div class="top border-box ">头部(根据内容自适应)</div>
+                    <div class="middle">
+                        <div class="left border-box ">主左边(根据内容自适应)（加了内边距）</div>
+                        <div class="right border-box ">
+                            <div class="right-helper">主右假装很长</div>
+                        </div>
+                    </div>
+                    <div class="bottom border-box ">底部(根据内容自适应)（加了内边距）</div>
+                </div>
+            </div>  
+        </el-card>
   </div>
 </template>
 <script>
@@ -108,6 +134,32 @@ export default {};
       display: flex;
       .left {
         width: 100px;
+      }
+      .right {
+        flex: 1;
+        overflow: auto;
+        &-helper {
+          height: 1200px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  &-flex-auto {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .top {
+    }
+    .bottom {
+      padding: 10px;
+    }
+    .middle {
+      flex: 1;
+      display: flex;
+      .left {
+        padding: 10px;
       }
       .right {
         flex: 1;
