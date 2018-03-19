@@ -10,6 +10,7 @@ import LessFun from "@/pages/lessFun";
 import FourPalace from "@/pages/fourPalace";
 import FixWidth from "@/pages/fixWidth";
 import Average from "@/pages/average";
+import FullScreen from "@/pages/fullScreen";
 
 Vue.use(Router);
 
@@ -64,6 +65,11 @@ export default new Router({
           path: "average",
           name: "Average",
           component: Average
+        },
+        {
+          path: "fullScreen",
+          name: "FullScreen",
+          component: FullScreen
         }
       ]
     }

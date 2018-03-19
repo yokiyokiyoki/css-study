@@ -32,6 +32,9 @@
             <el-menu-item index="average">
                 <span slot="title">均等分配布局</span>
             </el-menu-item>
+            <el-menu-item index="fullScreen">
+                <span slot="title">全屏布局</span>
+            </el-menu-item>
             </el-menu>
         </el-aside>
         <el-main>
