@@ -75,7 +75,7 @@ export default new Router({
         {
           path: "flex",
           name: "Flex",
-          component: FLex
+          component: Flex
         }
       ]
     }
