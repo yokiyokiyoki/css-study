@@ -11,7 +11,7 @@ import FourPalace from "@/pages/fourPalace";
 import FixWidth from "@/pages/fixWidth";
 import Average from "@/pages/average";
 import FullScreen from "@/pages/fullScreen";
-import Flex from "@/pages/Flex";
+import Flex from "@/pages/flex";
 
 Vue.use(Router);
 
