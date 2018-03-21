@@ -35,6 +35,9 @@
             <el-menu-item index="fullScreen">
                 <span slot="title">全屏布局</span>
             </el-menu-item>
+            <el-menu-item index="negativeMargin">
+                <span slot="title">负边距margin</span>
+            </el-menu-item>
             </el-menu>
         </el-aside>
         <el-main>
