@@ -1,7 +1,6 @@
 <template>
-  <div class="negativeMargin"></div>
+  <div class="flex"></div>
 </template>
 <script>
 export default {};
 </script>
-

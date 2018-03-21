@@ -11,7 +11,7 @@ import FourPalace from "@/pages/fourPalace";
 import FixWidth from "@/pages/fixWidth";
 import Average from "@/pages/average";
 import FullScreen from "@/pages/fullScreen";
-import NegativeMargin from "@/pages/negativeMargin";
+import Flex from "@/pages/Flex";
 
 Vue.use(Router);
 
@@ -73,9 +73,9 @@ export default new Router({
           component: FullScreen
         },
         {
-          path: "negativeMargin",
-          name: "NegativeMargin",
-          component: NegativeMargin
+          path: "flex",
+          name: "Flex",
+          component: FLex
         }
       ]
     }
