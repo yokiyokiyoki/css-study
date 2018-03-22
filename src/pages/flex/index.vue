@@ -51,14 +51,8 @@
             <div class="title">- no-wrap是就算超过了flex容器的宽度，也不会换行</div>
         </div>
         <div class="item">
-            <div class="item-wrap" style="width:100px;">
+            <div class="item-wrap" style="">
                 <div class="box border-box" v-for='n in 3' :key='n'>no-wrap+{{n}}</div>
-            </div>
-            <div class="item-wrap" style="width:100px;flex-wrap:wrap;">
-                <div class="box border-box" v-for='n in 3' :key='n'>wrap+{{n}}</div>
-            </div>
-            <div class="item-wrap" style="width:200px;flex-wrap:wrap-reverse;">
-                <div class="box border-box" v-for='n in 3' :key='n'>wrap-reverse+{{n}}</div>
             </div>
         </div>
     </el-card>
@@ -76,6 +70,53 @@
             </div>
             <div class="item-wrap" style="width:200px;flex-flow:column-reverse wrap-reverse;">
                 <div class="box border-box" v-for='n in 3' :key='n'>wrap-reverse+{{n}}</div>
+            </div>
+        </div>
+    </el-card>
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- flex容器的justify-content</div>
+            <div class="title">- 主轴方向对齐</div>
+            <div class="title">- 默认是flex-start</div>
+            <div class="title">- space-between对齐两端，flex-item之间的间隔相等</div>
+            <div class="title">- space-around，每个flex-item两边的间隔相等</div>
+        </div>
+        <div class="item">
+            <div class="item-wrap border-box" style="justify-content:center;">
+                <div class="box border-box" v-for='n in 3' :key='n'>center+{{n}}</div>
+            </div>
+            <div class="item-wrap border-box" style="justify-content:flex-end;">
+                <div class="box border-box" v-for='n in 3' :key='n'>flex-start+{{n}}</div>
+            </div>
+            <div class="item-wrap border-box" style="justify-content:space-between;">
+                <div class="box border-box" v-for='n in 3' :key='n'>space-between+{{n}}</div>
+            </div>
+            <div class="item-wrap border-box" style="justify-content:space-around;">
+                <div class="box border-box" v-for='n in 3' :key='n'>space-around+{{n}}</div>
+            </div>
+        </div>
+    </el-card>
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- flex容器的align-items</div>
+            <div class="title">- 交叉轴方向对齐</div>
+            <div class="title">- 默认是stretch</div>
+        </div>
+        <div class="item">
+            <div class="item-wrap border-box" style="align-items:center;height:50px;">
+                <div class="box border-box" v-for='n in 3' :key='n'>center+{{n}}</div>
+            </div>
+            <div class="item-wrap border-box" style="align-items:flex-start;height:50px;">
+                <div class="box border-box" v-for='n in 3' :key='n'>center+{{n}}</div>
+            </div>
+            <div class="item-wrap border-box" style="align-items:flex-end;height:50px;">
+                <div class="box border-box" v-for='n in 3' :key='n'>flex-end+{{n}}</div>
+            </div>
+            <div class="item-wrap border-box" style="align-items:baseline;height:50px;">
+                <div class="box border-box" v-for='n in 3' :key='n'>baseline+{{n}}</div>
+            </div>
+            <div class="item-wrap border-box" style="align-items:stretch;height:50px;">
+                <div class="box border-box" v-for='n in 3' :key='n'>bstretch+{{n}}</div>
             </div>
         </div>
     </el-card>
