@@ -253,6 +253,20 @@
             </div>
         </div>
     </el-card>
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- flex-item的align-self</div>
+            <div class="title">- 用来单独指定item的对齐方式</div>
+            <div class="title">- 默认继承flex容器的align-items的，如果没有，则去stretch</div>
+            <div class="title">- 其他值同align-items</div>
+        </div>
+        <div class="item">
+            <div class="item-wrap border-box" style="height:200px;align-items:center;">
+                <div class="box border-box" style="flex:1;align-self:flex-start;">align-self:flex-start;</div>
+                <div class="box border-box" style="flex:3;">继承flex容器的center</div>
+            </div>
+        </div>
+    </el-card>
   </div>
 </template>
 <script>
