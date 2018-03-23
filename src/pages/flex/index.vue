@@ -191,6 +191,29 @@
             </div>
         </div>
     </el-card>
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- flex-item的flex-shrink</div>
+            <div class="title">- 只能在不换行的情况下使用</div>
+            <div class="title">- 指定flex-item的收缩比例，就是在剩余空间为负数的时候，怎么按比例收缩的问题</div>
+            <div class="title">- 不可以为负数</div>
+            <div class="title">- 默认为1，即flex容器空间不足的时候大家默认缩小</div>
+            <div class="title">- flex-shrink设置越大，就缩小越多，如果是0则不缩小</div>
+            <div class="title">- 下面第一个如果不设置父容器宽度的话，本来flex-item为86px那么宽，现在设置为150px，大家等比缩小</div>
+        </div>
+        <div class="item">
+            <div class="item-wrap border-box" style="width:150px;">
+                <div class="box border-box" style="flex-shrink:1;">flex-shrink为1</div>
+                <div class="box border-box" style="flex-shrink:1;">flex-shrink为1</div>
+                <div class="box border-box" style="flex-shrink:1;">flex-shrink为1</div>
+            </div>
+            <div class="item-wrap border-box" style="width:150px;">
+                <div class="box border-box" style="flex-shrink:1;">flex-shrink为1</div>
+                <div class="box border-box" style="flex-shrink:0;">flex-shrink为0</div>
+                <div class="box border-box" style="flex-shrink:1;">flex-shrink为1</div>
+            </div>
+        </div>
+    </el-card>
   </div>
 </template>
 <script>
