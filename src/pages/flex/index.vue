@@ -48,6 +48,7 @@
     <el-card class="box-card">
         <div slot='header'>
             <div class="title">- flex容器的flex-wrap</div>
+            <div class="title">- 超过了容器宽度后选择换行不换行</div>
             <div class="title">- no-wrap是就算超过了flex容器的宽度，也不会换行</div>
         </div>
         <div class="item">
@@ -138,11 +139,55 @@
             <div class="item-wrap border-box" style="width:100px;align-content:flex-end;flex-wrap:wrap;height:100px;">
                 <div class="box border-box" v-for='n in 3' :key='n'>flex-end+{{n}}</div>
             </div>
-            <div class="item-wrap border-box" style="width:100px;">
-                <div class="box border-box" v-for='n in 3' :key='n'>baseline+{{n}}</div>
+            <div class="item-wrap border-box" style="width:200px;align-content:space-between;flex-wrap:wrap;height:100px;">
+                <div class="box border-box" v-for='n in 3' :key='n'>space-between+{{n}}</div>
             </div>
-            <div class="item-wrap border-box" style="width:100px;">
-                <div class="box border-box" v-for='n in 3' :key='n'>stretch+{{n}}</div>
+            <div class="item-wrap border-box" style="width:200px;align-content:space-around;flex-wrap:wrap;height:100px;">
+                <div class="box border-box" v-for='n in 3' :key='n'>space-around+{{n}}</div>
+            </div>
+        </div>
+    </el-card>
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- flex-item属性</div>
+            <div class="title">- order,flex-grow,flex-shrink,flex-basis,flex,align-self</div>
+        </div>
+    </el-card>
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- flex-item的order</div>
+            <div class="title">- 控制顺序，默认第一个是0</div>
+            <div class="title">- 如果给某一个item设置为-1，那么它排列在最前面</div>
+        </div>
+        <div class="item">
+            <div class="item-wrap border-box">
+                <div class="box border-box">1</div>
+                <div class="box border-box">2</div>
+                <div class="box border-box" style='order:-1;'>3</div>
+            </div>
+        </div>
+    </el-card>
+     <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- flex-item的flex-grow</div>
+            <div class="title">- 即拓展比例,如果有剩余空间，怎么按比例拓展</div>
+            <div class="title">- 默认为0，就是有剩余空间也不拓展</div>
+        </div>
+        <div class="item">
+            <div class="item-wrap border-box">
+                <div class="box border-box">默认1</div>
+                <div class="box border-box">默认2</div>
+                <div class="box border-box">默认3</div>
+            </div>
+            <div class="item-wrap border-box">
+                <div class="box border-box" style='flex-grow:1;'>flex-grow为1</div>
+                <div class="box border-box" style='flex-grow:1;'>flex-grow为1</div>
+                <div class="box border-box" style='flex-grow:1;'>flex-grow为1</div>
+            </div>
+            <div class="item-wrap border-box">
+                <div class="box border-box" style='flex-grow:1;'>flex-grow为1</div>
+                <div class="box border-box" style='flex-grow:1;'>flex-grow为1</div>
+                <div class="box border-box" style='flex-grow:3;'>flex-grow为3</div>
             </div>
         </div>
     </el-card>
