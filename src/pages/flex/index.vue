@@ -100,7 +100,7 @@
         <div slot='header'>
             <div class="title">- flex容器的align-items</div>
             <div class="title">- 交叉轴方向对齐</div>
-            <div class="title">- 默认是stretch</div>
+            <div class="title">- 默认是stretch(填满)</div>
         </div>
         <div class="item">
             <div class="item-wrap border-box" style="align-items:center;height:50px;">
@@ -116,7 +116,33 @@
                 <div class="box border-box" v-for='n in 3' :key='n'>baseline+{{n}}</div>
             </div>
             <div class="item-wrap border-box" style="align-items:stretch;height:50px;">
-                <div class="box border-box" v-for='n in 3' :key='n'>bstretch+{{n}}</div>
+                <div class="box border-box" v-for='n in 3' :key='n'>stretch+{{n}}</div>
+            </div>
+        </div>
+    </el-card>
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- flex容器的align-content</div>
+            <div class="title">- 多根轴线对齐方式</div>
+            <div class="title">- flex容器在一行的时候，该属性不起作用。</div>
+            <div class="title">- 可以很好的处理换行之后的间距问题</div>
+            <div class="title">- 默认是stretch,当flex-item没有设置高度或者为auto的时候，将其设为行高度</div>
+        </div>
+        <div class="item">
+            <div class="item-wrap border-box" style="width:100px;align-content:stretch;flex-wrap:wrap;height:100px;">
+                <div class="box border-box" v-for='n in 3' :key='n'>stretch+{{n}}</div>
+            </div>
+            <div class="item-wrap border-box" style="width:100px;align-content:flex-start;flex-wrap:wrap;height:100px;">
+                <div class="box border-box" v-for='n in 3' :key='n'>flex-start+{{n}}</div>
+            </div>
+            <div class="item-wrap border-box" style="width:100px;align-content:flex-end;flex-wrap:wrap;height:100px;">
+                <div class="box border-box" v-for='n in 3' :key='n'>flex-end+{{n}}</div>
+            </div>
+            <div class="item-wrap border-box" style="width:100px;">
+                <div class="box border-box" v-for='n in 3' :key='n'>baseline+{{n}}</div>
+            </div>
+            <div class="item-wrap border-box" style="width:100px;">
+                <div class="box border-box" v-for='n in 3' :key='n'>stretch+{{n}}</div>
             </div>
         </div>
     </el-card>
