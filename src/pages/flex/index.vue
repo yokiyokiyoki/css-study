@@ -225,11 +225,31 @@
             <div class="title">- 用来指定item占据的空间，不可以为负数</div>
             <div class="title">- 可以设定为auto | length | percentage | content</div>
             <div class="title">- 默认值，计算规则：检索Flex子项是否设置了width值（或者height值，取决于flex-direction），如果设置了非auto的值，则使用width值（或者height值），若没有则使用content</div>
+            <div class="title">- 设置flex-grow和flex-shrink进行收缩的时候，都是flex-basis上进行的</div>
         </div>
         <div class="item">
             <div class="item-wrap border-box" style="width:500px;">
                 <div class="box border-box" style="flex-basis:130px;flex-grow:1;">flex-basis为130px</div>
                 <div class="box border-box" style="flex-basis:260px;flex-grow:3;">flex-basis为260px</div>
+            </div>
+        </div>
+    </el-card>
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- flex-item的flex</div>
+            <div class="title">- 是flex-grow，flex-shrink，flex-basis的合体</div>
+            <div class="title">- 优先使用这个属性flex</div>
+            <div class="title">- 取值为none | 各拆分项属性</div>
+            <div class="title">- none：0 0 auto</div>
+            <div class="title">- auto:1 1 auto</div>
+            <div class="title">- 1：1 1 0%</div>
+            <div class="title">- 一般我们直接写flex：1，就是flex：1 1 0%;</div>
+            <div class="title">- flex：3，就是flex：3 1 0%; 如果不写后面两个，一般后面就是默认是1 0%</div>
+        </div>
+        <div class="item">
+            <div class="item-wrap border-box" style="width:500px;">
+                <div class="box border-box" style="flex:1;">flex:1</div>
+                <div class="box border-box" style="flex:3;">flex:3</div>
             </div>
         </div>
     </el-card>
