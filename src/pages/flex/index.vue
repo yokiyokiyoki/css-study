@@ -212,6 +212,25 @@
                 <div class="box border-box" style="flex-shrink:0;">flex-shrink为0</div>
                 <div class="box border-box" style="flex-shrink:1;">flex-shrink为1</div>
             </div>
+            <div class="item-wrap border-box" style="width:150px;">
+                <div class="box border-box" style="flex-shrink:3;">flex-shrink为3</div>
+                <div class="box border-box" style="flex-shrink:1;">flex-shrink为1</div>
+                <div class="box border-box" style="flex-shrink:1;">flex-shrink为1</div>
+            </div>
+        </div>
+    </el-card>
+    <el-card class="box-card">
+        <div slot='header'>
+            <div class="title">- flex-item的flex-basis</div>
+            <div class="title">- 用来指定item占据的空间，不可以为负数</div>
+            <div class="title">- 可以设定为auto | length | percentage | content</div>
+            <div class="title">- 默认值，计算规则：检索Flex子项是否设置了width值（或者height值，取决于flex-direction），如果设置了非auto的值，则使用width值（或者height值），若没有则使用content</div>
+        </div>
+        <div class="item">
+            <div class="item-wrap border-box" style="width:500px;">
+                <div class="box border-box" style="flex-basis:130px;flex-grow:1;">flex-basis为130px</div>
+                <div class="box border-box" style="flex-basis:260px;flex-grow:3;">flex-basis为260px</div>
+            </div>
         </div>
     </el-card>
   </div>
