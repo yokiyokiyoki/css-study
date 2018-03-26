@@ -45,6 +45,7 @@
                 <div class="title">- 使用flex布局，由于其默认不换行，通过flex-wrap:wrap</div>
                 <div class="title">- 父容器拥有指定宽度,其中的子元素也拥有指定的宽度（不必设置flex：1）</div>
                 <div class="title">- 子容器可以直接设置width为25%这样</div>
+                <div class="title">- 也叫流式布局</div> 
             </div>
             <div class="item">
                 <div class="wrap-flex-wrap">
