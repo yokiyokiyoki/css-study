@@ -22,7 +22,9 @@
         <el-card class="box-card"> 
             <div slot='header'>
                 <div class="title">- 所有的item设为float:left，全部浮动起来</div>
-                <div class="title">- </div>
+                <div class="title">- 把middle的width设为100%</div>
+                <div class="title">- 把left的margin-left设为-100%</div>
+                <div class="title">- 把right的margin-left设为负的它本身的宽度</div>
             </div>
         </el-card>
   </div>
@@ -56,15 +58,20 @@ export default {};
     &-content {
       .col {
         float: left;
+        height: 50px;
+        border: 1px solid black;
+        box-sizing: border-box;
       }
       &-middle {
         width: 100%;
       }
       &-left {
         width: 20px;
+        margin-left: -100%;
       }
       &-right {
         width: 20px;
+        margin-left: -20px;
       }
     }
     &-footer {
