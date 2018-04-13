@@ -12,6 +12,7 @@ import FixWidth from "@/pages/fixWidth";
 import Average from "@/pages/average";
 import FullScreen from "@/pages/fullScreen";
 import Flex from "@/pages/flex";
+import HolyGrail from "@/pages/holyGrail";
 
 Vue.use(Router);
 
@@ -76,6 +77,11 @@ export default new Router({
           path: "flex",
           name: "Flex",
           component: Flex
+        },
+        {
+          path: "holyGrail",
+          name: "HolyGrail",
+          component: HolyGrail
         }
       ]
     }
