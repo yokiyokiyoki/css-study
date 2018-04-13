@@ -38,6 +38,9 @@
             <el-menu-item index="flex">
                 <span slot="title">flex布局</span>
             </el-menu-item>
+            <el-menu-item index="holyGrail">
+                <span slot="title">圣杯布局</span>
+            </el-menu-item>
             </el-menu>
         </el-aside>
         <el-main>
