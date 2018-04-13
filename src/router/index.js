@@ -13,6 +13,7 @@ import Average from "@/pages/average";
 import FullScreen from "@/pages/fullScreen";
 import Flex from "@/pages/flex";
 import HolyGrail from "@/pages/holygrail";
+import After from "@/pages/after";
 
 Vue.use(Router);
 
@@ -82,6 +83,11 @@ export default new Router({
           path: "holyGrail",
           name: "HolyGrail",
           component: HolyGrail
+        },
+        {
+          path: "after",
+          name: "After",
+          component: After
         }
       ]
     }

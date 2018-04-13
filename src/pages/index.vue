@@ -41,6 +41,9 @@
             <el-menu-item index="holyGrail">
                 <span slot="title">圣杯布局</span>
             </el-menu-item>
+            <el-menu-item index="after">
+                <span slot="title">活用伪元素</span>
+            </el-menu-item>
             </el-menu>
         </el-aside>
         <el-main>
