@@ -8,25 +8,22 @@
     </div>
 </template>
 <script>
-    export default {
-      data() {
-        return {
-          
-        };
-      }
-    };
+export default {
+  data() {
+    return {};
+  }
+};
 </script>
 <style lang="less" scoped>
-    .wrap {
-      text-align: left;
-      .item {
-        padding: 18px 0;
-      }
+.wrap {
+  text-align: left;
+  .item {
+    padding: 18px 0;
+  }
 
-      .box-card {
-        width: 100%;
-      }
-    }
-
+  .box-card {
+    width: 100%;
+  }
+}
 </style>
 

@@ -44,6 +44,9 @@
             <el-menu-item index="after">
                 <span slot="title">活用伪元素</span>
             </el-menu-item>
+            <el-menu-item index="wrap">
+                <span slot="title">关于换行</span>
+            </el-menu-item>
             </el-menu>
         </el-aside>
         <el-main>

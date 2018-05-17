@@ -14,6 +14,7 @@ import FullScreen from "@/pages/fullScreen";
 import Flex from "@/pages/flex";
 import HolyGrail from "@/pages/holygrail";
 import After from "@/pages/after";
+import Wrap from "@/pages/wrap";
 
 Vue.use(Router);
 
@@ -88,6 +89,11 @@ export default new Router({
           path: "after",
           name: "After",
           component: After
+        },
+        {
+          path: "wrap",
+          name: "Wrap",
+          component: Wrap
         }
       ]
     }
