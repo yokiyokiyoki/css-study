@@ -9,11 +9,11 @@
                 <div class="title">- 实际上有两个包裹元素</div>
             </div>
             <div class="item" >
-               <p class="wrap-father" style="width:200px;">
+               <p class="wrap-father" >
                    <span>1111111111111</span>
                </p>
-               <p class="wrap-father" style="width:200px;">
-                   <span>111111111111111111111111111111111111111</span>
+               <p class="wrap-father" >
+                   <span>111111111111111111111111<br/>111111111111111</span>
                </p>
             </div>
         </el-card>
@@ -37,9 +37,11 @@ export default {
     width: 100%;
     .wrap-father {
       text-align: center;
+      width: 200px;
       span {
         display: inline-flex;
         flex-wrap: wrap;
+        text-align: left;
       }
     }
   }
