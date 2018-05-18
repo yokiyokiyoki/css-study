@@ -4,4 +4,4 @@ studying
 
 ## deploy
 
-* git subtree push --prefix dist origin gh-pages
+* 通过执行 deploy.sh dist 发布
