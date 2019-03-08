@@ -6,6 +6,9 @@ import router from './router';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import 'normalize.css';
+//代码高亮
+import "./lib/prism/theme.css"
+import "./lib/prism/PrismJS.js"
 import '@/less/app.less';
 Vue.config.productionTip = false
 
